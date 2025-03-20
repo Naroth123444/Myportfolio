@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+  /* Custom Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+  .animate-scale-in { animation: scaleIn 0.2s ease-out forwards; }
+  .section-header { @apply text-3xl font-bold mb-6; }
+  .custom-border { @apply border border-gray-300 dark:border-gray-600; }
+  /* Hover Effects */
+  .project-card:hover .project-img {
+    transform: translateX(-12px) translateY(12px) rotate(-2deg) scale(1.04);
+  }
+  .project-card-even:hover .project-img {
+    transform: translateX(12px) translateY(12px) rotate(2deg) scale(1.04);
+  }
+</style>
+<body>
+     <!-- Project Section -->
+     <section id="project" class="mb-28 scroll-mt-28 animate-fade-in bg-black ">
+      <h2 class="section-header text-center text-2xl font-medium mb-10">Projects</h2>
+      <div class="space-y-8">
+        <div class="project-card group max-w-[42rem] rounded-lg border border-black/5 bg-gray-100 dark:bg-white/10 p-5 sm:flex sm:h-[22.5rem] hover:bg-gray-200 dark:hover:bg-white/20 transition">
+          <div class="sm:w-1/2 p-4">
+            <h3 class="text-2xl font-semibold">CamDL KYC Portal</h3>
+            <p class="mt-2 text-black ">A cutting-edge platform developed using Next.js and Chakra UI, incorporating smart contracts written in Solidity.</p>
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">React</li>
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Next.js</li>
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Prisma</li>
+            </ul>
+          </div>
+          <img src="https://cdn.sanity.io/images/j493y206/production/a7b46e3202706de4fe25dd56fa2063bdabf424a5-1280x688.jpg?w=800" alt="CamDL KYC Portal" class="project-img hidden sm:block sm:w-1/2 rounded-t-lg shadow-2xl transition">
+        </div>
+      </section>
+        <section class="mb-28 scroll-mt-28 animate-fade-in bg-black">  
+          <h2 class="section-header text-center text-2xl font-medium">Project 2</h2>
+          <div class="space-y-8">
+            <div class="project-card group max-w-[42rem] rounded-lg border border-black/5 bg-gray-100 dark:bg-white/10 p-5 sm:flex sm:h-[22.5rem] hover:bg-gray-200 dark:hover:bg-white/20 transition">
+              <!-- Image on the left -->
+              <img
+              src="https://cdn.sanity.io/images/j493y206/production/4aa7e38847fc50550f913472689ddc5ec531346e-1280x687.jpg?w=800"
+            alt="CamDL KYC Portal"
+            class="project-img hidden sm:block sm:w-1/2 rounded-t-lg shadow-2xl transition order-first"
+            />
+            <!-- Text content on the right -->
+            <div class="sm:w-1/2 p-4">
+            <h3 class="text-2xl font-semibold">CamDL KYC Portal</h3>
+            <p class="mt-2 text-black ">
+              A cutting-edge platform developed using Next.js and Chakra UI, incorporating smart contracts written in Solidity.
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">React</li>
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Next.js</li>
+              <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Prisma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+
+    <!-- Project Section -->
+<section id="project" class="min-h-screen flex items-center justify-center py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="section-header text-center text-2xl font-medium mb-10">Projects</h2>
+    <div class="space-y-8 flex flex-col items-center">
+      <div class="project-card group max-w-[42rem] w-full rounded-lg border border-black/5 dark:bg-white/10 p-5 sm:flex sm:h-[22.5rem] hover:bg-gray-200 dark:hover:bg-white/20 transition">
+        <div class="sm:w-1/2 p-4">
+          <h3 class="text-2xl font-semibold">CamDL KYC Portal</h3>
+          <p class="mt-2 text-black">A cutting-edge platform developed using Next.js and Chakra UI, incorporating smart contracts written in Solidity.</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">React</li>
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Next.js</li>
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Prisma</li>
+          </ul>
+        </div>
+        <img src="https://cdn.sanity.io/images/j493y206/production/a7b46e3202706de4fe25dd56fa2063bdabf424a5-1280x688.jpg?w=800" 
+             alt="CamDL KYC Portal" 
+             class="project-img hidden sm:block sm:w-1/2 rounded-t-lg shadow-2xl transition">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="project" class="min-h-screen flex items-center justify-center py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="section-header text-center text-2xl font-medium mb-10">Projects</h2>
+    <div class="space-y-8 flex flex-col items-center">
+      <div class="project-card group max-w-[42rem] w-full rounded-lg border border-black/5 dark:bg-white/10 p-5 sm:flex sm:h-[22.5rem] hover:bg-gray-200 dark:hover:bg-white/20 transition">
+        <div class="sm:w-1/2 p-4">
+          <h3 class="text-2xl font-semibold">CamDL KYC Portal</h3>
+          <p class="mt-2 text-black">A cutting-edge platform developed using Next.js and Chakra UI, incorporating smart contracts written in Solidity.</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">React</li>
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Next.js</li>
+            <li class="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">Prisma</li>
+          </ul>
+        </div>
+        <img src="https://cdn.sanity.io/images/j493y206/production/a7b46e3202706de4fe25dd56fa2063bdabf424a5-1280x688.jpg?w=800" 
+             alt="CamDL KYC Portal" 
+             class="project-img hidden sm:block sm:w-1/2 rounded-t-lg shadow-2xl transition">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="min-h-screen flex flex-col items-center justify-center text-center py-12">
+  <h1 class="text-3xl font-bold mb-6">Skills</h1>
+  <div class="flex flex-wrap justify-center gap-3 max-w-xl">
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Mysql Server</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">CSS</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Docker</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">HTML</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Java</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">JavaScript</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Kubernetes</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Next.js</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">PostgreSQL</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">SQL Workbench</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">React</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">Solidity</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">SvelteKit</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">TailwindCSS</span>
+    <span class="skill-tag bg-gray-200 px-3 py-1 rounded-full">TypeScript</span>
+  </div>
+</section>
+
+</body>
+</html>
